@@ -20,25 +20,25 @@ function Carlist() {
         return response.data._embedded.cars;
     };
 
-    // 使用 useQuery 钩子
+    // use useQuery hook
     const { data, error, isSuccess } = useQuery<CarResponse[]>({
         queryKey: ['cars'],
         queryFn: getCars,
     });
 
-    // 使用 useMutation 删除汽车
+    // use useMutation delete car
     const { mutate } = useMutation<void, Error, string>(deleteCar, {
         onSuccess: () => {
-            setOpen(true);  // 删除成功后显示 Snackbar
+            setOpen(true);  // when success delete show Snackbar
             queryClient.invalidateQueries({ queryKey: ['cars'] });  // 重新获取数据
         },
         onError: (err) => {
-            console.error(err);  // 处理错误
+            console.error(err);  // handle error
         },
     });
     
 
-    // 定义表格的列
+    // table column
     const columns: GridColDef[] = [
         { field: 'brand', headerName: 'Brand', width: 200 },
         { field: 'model', headerName: 'Model', width: 200 },
@@ -65,7 +65,7 @@ function Carlist() {
             filterable: false,
             disableColumnMenu: true,
             renderCell: (params: GridRenderCellParams) => (
-                <IconButton aria-label = "delete" size="small"
+                <IconButton aria-label = "delete" size="small" 
                     onClick={() => {
                         if (window.confirm(`Are you sure you 
                         want tdelete
@@ -79,7 +79,7 @@ function Carlist() {
         }
     ];
 
-    // 如果数据正在加载中，显示 Loading
+    // if data is loading, show Loading
     if (!isSuccess) {
         return <span>Loading...</span>;
     } else if (error) {
