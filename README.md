@@ -19,13 +19,13 @@ This project is a Full Stack Web Application for managing cars. The frontend is 
 - Axios
 - React Query for data fetching
 
-### Installation:
+## Installation:
 
-  ### Create a new Vite React project with TypeScript:
+### Create a new Vite React project with TypeScript:
 
 - npm create vite@latest
 
-  ### Name the project carfront, select React and TypeScript when prompted:
+### Name the project carfront, select React and TypeScript when prompted:
 
 - cd carfront
 
@@ -58,7 +58,7 @@ This project is a Full Stack Web Application for managing cars. The frontend is 
 
 ### This sets the API base URL that the frontend will use to communicate with the backend.
 
-### How to Use:
+## How to Use:
 
 - **Add a Car**: Click the "NEW CAR" button to add a new car to the list. Fill in the form with the car details and submit it.
 
@@ -70,7 +70,7 @@ This project is a Full Stack Web Application for managing cars. The frontend is 
   
 - **Export**: Export the table data by clicking the "EXPORT" button in the top right of the table.
 
-### Notes:
+## Notes:
 - Data Fetching: The app uses useQuery from React Query to fetch data from the backend. Make sure the backend is running on http://localhost:8080 or update the API URL in the .env file as needed.
   
 - Customization: The table allows you to customize visible columns, apply filters, and sort the data. Use the toolbar at the top of the DataGrid for column management and export options.
