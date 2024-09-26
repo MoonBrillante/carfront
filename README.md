@@ -60,10 +60,17 @@ npm install axios
 
 ### How to Use:
 
-Add a Car: Click the "NEW CAR" button to add a new car to the list. Fill in the form with the car details and submit it.
-View/Edit/Delete Cars: Use the pencil icon to edit a car, and the trash icon to delete a car.
-Filtering and Sorting: Use the filters provided at the top of the grid to filter cars based on brand, model, color, etc. You can also sort the columns by clicking on the column headers.
-Export: Export the table data by clicking the "EXPORT" button in the top right of the table.
-Notes:
-Data Fetching: The app uses useQuery from React Query to fetch data from the backend. Make sure the backend is running on http://localhost:8080 or update the API URL in the .env file as needed.
-Customization: The table allows you to customize visible columns, apply filters, and sort the data. Use the toolbar at the top of the DataGrid for column management and export options.
+- Add a Car: Click the "NEW CAR" button to add a new car to the list. Fill in the form with the car details and submit it.
+
+- View/Edit/Delete Cars: Use the pencil icon to edit a car, and the trash icon to delete a car.
+
+- Filtering and Sorting: Use the filters provided at the top of the grid to filter cars based on brand, model, color, etc. 
+  
+- You can also sort the columns by clicking on the column headers.
+  
+- Export: Export the table data by clicking the "EXPORT" button in the top right of the table.
+
+### Notes:
+- Data Fetching: The app uses useQuery from React Query to fetch data from the backend. Make sure the backend is running on http://localhost:8080 or update the API URL in the .env file as needed.
+  
+- Customization: The table allows you to customize visible columns, apply filters, and sort the data. Use the toolbar at the top of the DataGrid for column management and export options.
