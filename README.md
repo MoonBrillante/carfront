@@ -21,11 +21,11 @@ This project is a Full Stack Web Application for managing cars. The frontend is 
 
 ### Installation:
 
-  **Create a new Vite React project with TypeScript:
+  ### Create a new Vite React project with TypeScript:
 
 - npm create vite@latest
 
-  **Name the project carfront, select React and TypeScript when prompted:
+  ### Name the project carfront, select React and TypeScript when prompted:
 
 - cd carfront
 
@@ -44,7 +44,7 @@ This project is a Full Stack Web Application for managing cars. The frontend is 
 
 ### Install Axios for making API requests
 
-npm install axios
+- npm install axios
 
 ### Install MUI's DataGrid for displaying the table
 
@@ -60,15 +60,15 @@ npm install axios
 
 ### How to Use:
 
-- Add a Car: Click the "NEW CAR" button to add a new car to the list. Fill in the form with the car details and submit it.
+- **Add a Car**: Click the "NEW CAR" button to add a new car to the list. Fill in the form with the car details and submit it.
 
-- View/Edit/Delete Cars: Use the pencil icon to edit a car, and the trash icon to delete a car.
+- **View/Edit/Delete Cars**: Use the pencil icon to edit a car, and the trash icon to delete a car.
 
-- Filtering and Sorting: Use the filters provided at the top of the grid to filter cars based on brand, model, color, etc. 
+- **Filtering and Sorting**: Use the filters provided at the top of the grid to filter cars based on brand, model, color, etc. 
   
 - You can also sort the columns by clicking on the column headers.
   
-- Export: Export the table data by clicking the "EXPORT" button in the top right of the table.
+- **Export**: Export the table data by clicking the "EXPORT" button in the top right of the table.
 
 ### Notes:
 - Data Fetching: The app uses useQuery from React Query to fetch data from the backend. Make sure the backend is running on http://localhost:8080 or update the API URL in the .env file as needed.
