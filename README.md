@@ -23,44 +23,45 @@ This project is a Full Stack Web Application for managing cars. The frontend is 
 
 1. Create a new Vite React project with TypeScript:
 
-   ```bash
-   npm create vite@latest
+   ```
+npm create vite@latest
 Name the project carfront, select React and TypeScript when prompted:
 
-bash
-Copy code
 cd carfront
+
 Install the necessary dependencies:
 
-bash
-Copy code
 npm install
 npm run dev
-Install additional packages:
 
-bash
-Copy code
+```
+
 # Install Material-UI and Emotion for styling
+```
 npm install @mui/material @emotion/react @emotion/styled
 
+```
 # Install React Query for data fetching
+```
 npm install @tanstack/react-query@4
-
+```
 # Install Axios for making API requests
+```
 npm install axios
-
+```
 # Install MUI's DataGrid for displaying the table
+```
 npm install @mui/x-data-grid
-Set up React Query's useQuery for data fetching.
+```
+## Set up React Query's useQuery for data fetching.
 
-Create a new .env file in the root folder of your app and add the following environment variable:
-
-bash
-Copy code
-VITE_API_URL=http://localhost:8080
+## Create a new .env file in the root folder of your app and add the following environment variable:
+```
+VITE_API_URL=http://localhost:8080 
 This sets the API base URL that the frontend will use to communicate with the backend.
-
-How to Use:
+```
+## How to Use:
+```
 Add a Car: Click the "NEW CAR" button to add a new car to the list. Fill in the form with the car details and submit it.
 View/Edit/Delete Cars: Use the pencil icon to edit a car, and the trash icon to delete a car.
 Filtering and Sorting: Use the filters provided at the top of the grid to filter cars based on brand, model, color, etc. You can also sort the columns by clicking on the column headers.
@@ -68,3 +69,4 @@ Export: Export the table data by clicking the "EXPORT" button in the top right o
 Notes:
 Data Fetching: The app uses useQuery from React Query to fetch data from the backend. Make sure the backend is running on http://localhost:8080 or update the API URL in the .env file as needed.
 Customization: The table allows you to customize visible columns, apply filters, and sort the data. Use the toolbar at the top of the DataGrid for column management and export options.
+```
